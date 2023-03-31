@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Camera Settings</title>
+</head>
+<body>
+	<form method="POST">
+		<table>
+			{% for param, value in params.items() %}
+			<tr>
+				<td>{{ param }}</td>
+				<td><input type="text" name="{{ param }}" value="{{ value }}"></td>
+			</tr>
+			{% endfor %}
+		</table>
+		<input type="submit" value="Save">
+	</form>
+
+	<b><p>
+    brightness: яркость изображения<p>
+    contrast: контрастность изображения<p>
+    saturation: насыщенность цвета<p>
+    hue: тон изображения<p>
+    sharpness: резкость изображения<p>
+    white_balance_temperature_auto: автоматическая балансировка белого<p>
+    white_balance_temperature: температура баланса белого<p>
+    backlight_compensation: компенсация засветки<p>
+    gain: усиление изображения
+	</b>
+</body>
+</html>
+
