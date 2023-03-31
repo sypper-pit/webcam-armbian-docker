@@ -1,0 +1,1 @@
+Use settings.html
